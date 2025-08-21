@@ -1,3 +1,19 @@
+"""
+Portfolio Optimization with Efficient Frontier (Python + CVXPY)
+
+This script constructs and optimizes a long-only equity portfolio using mean-variance optimization. 
+It downloads historical stock price data with yfinance, calculates expected returns and the 
+covariance matrix, and applies constraints (no shorting, max 30% allocation per asset).
+
+Key features:
+- Data download and return calculations
+- Annualized expected returns and covariance estimation
+- Convex optimization with CVXPY (risk-return tradeoff)
+- Efficient Frontier generation and visualization
+- Displays optimized weights, expected return, and risk
+
+Useful for demonstrating quantitative finance, portfolio optimization, and risk management techniques.
+"""
 import yfinance as yf
 import numpy as np
 import pandas as pd
